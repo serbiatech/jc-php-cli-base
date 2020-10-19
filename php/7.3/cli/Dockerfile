@@ -12,4 +12,4 @@ RUN apk add librdkafka librdkafka-dev \
 RUN pecl channel-update pecl.php.net && \
     pecl install rdkafka apcu && \
     docker-php-ext-install xml soap pcntl && \
-    php-ext-enable rdkafka soap apcu
+    docker-php-ext-enable rdkafka soap apcu
